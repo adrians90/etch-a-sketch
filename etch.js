@@ -2,6 +2,8 @@ const resetButton = document.querySelector('button');
 const container = document.querySelector('.container');
 const sizeOfGrid = 16;
 
+
+
 const createGrid = (amtOfGrids) => {
     const wrapper = document.createElement('div');
     wrapper.classList.add('wrapper');
@@ -15,7 +17,7 @@ const createGrid = (amtOfGrids) => {
             gridBox.classList.add('grid-box');
             //added mouseenter listener to change background color;
             gridBox.addEventListener('mouseenter', () => {
-                gridBox.style.backgroundColor = 'black'
+                gridBox.style.backgroundColor = '#228B22'
             })
             row.appendChild(gridBox)
         }
@@ -38,6 +40,8 @@ resetButton.addEventListener('click', () => {
     wrapper.remove();
     createGrid(userSize);
 })
+
+
 
 
 
